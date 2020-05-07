@@ -1,0 +1,196 @@
+
+body{
+	background-image: url("images/e.jpg");
+}
+.main{
+	background-color: #3c383894;
+    height: 427px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+}
+.main1{
+	background-color: white;
+    height: 380px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 21px;
+    left: 26px;
+    bottom: -97px;
+    background-image: url(a.jpg);
+}
+.main2{
+	font-size: 25px;
+    font-family: Segoe UI;
+    top: 50px;
+    position: absolute;
+    align-items: center;
+    left: 155px;
+}
+.username{
+    position: absolute;
+    left: 150px;
+    top: 140px;
+    font-size: 20px;
+
+}
+.password {
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    font-size: 20px;
+}
+button.submit1 {
+    position: absolute;
+    background-color: #2be6a1;
+    top: 260px;
+    font-size: 18px;
+    height: 35px;
+    border: 1px solid;
+    width: 250px;
+    left: 150px;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+div.main3 {
+    background-color: #b1aaaa57;
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    top: 330px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+a {
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    line-height: 55px;
+}
+button#submit {
+    background-color: #2be6a1;
+    color: white;
+    height: 40px;
+    width: 250px;
+    border-radius: 2px;
+    border: 1px solid;
+    font-family: segoe ui;
+    outline: none;
+    cursor: pointer;
+}
+button#submit1a {
+    background-color: #2be6a1;
+    color: white;
+    height: 30px;
+    width: 250px;
+    position: absolute;
+    left: 8px;
+    opacity: 0;
+    visibility: hidden;
+}
+a:hover{
+	text-decoration: underline;
+}
+i.fa.fa-user {
+    position: absolute;
+    top: 144px;
+    left: 130px;
+    font-size: 20px;
+}
+i.fa.fa-lock {
+    position: absolute;
+    top: 205px;
+    left: 130px;
+    font-size: 20px;
+}
+p#demo {
+    position: absolute;
+    top: 154px;
+    left: 150px;
+    color: red;
+}
+p#demo1 {
+    position: absolute;
+    top: 215px;
+    left: 150px;
+    color: red;
+}
+
+input#passwordnew {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    height: 23px;
+    width: 243px;
+    /*opacity: 0;
+    visibility: hidden;*/
+}
+input#passwordold {
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    height: 23px;
+    width: 243px;
+    /*opacity: 0;
+    visibility: hidden;*/
+}
+button#save {
+    position: absolute;
+    background-color: #2be6a1;
+    top: 260px;
+    font-size: 18px;
+    height: 35px;
+    border: 1px solid;
+    width: 250px;
+    left: 150px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    /*opacity: 0;
+    visibility: hidden;*/
+}
+p#demo2 {
+    color: red;
+    position: absolute;
+    top: 216px;
+    left: 150px;
+}
+.sora{
+	opacity: 1;
+	visibility: visible;
+}
+.sora1{
+	opacity: 0;
+	visibility: hidden;
+}
+p#demo3 {
+    color: red;
+    position: absolute;
+    top: 155px;
+    left: 150px;
+}
+p#demo4 {
+    color: red;
+    position: absolute;
+    top: 216px;
+    left: 150px;
+}
+.fa.fa-times {
+    position: absolute;
+    top: 33px;
+    left: 438px;
+    color: #80808038;
+    font-size: 18px;
+    cursor: pointer;
+}

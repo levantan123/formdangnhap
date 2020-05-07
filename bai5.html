@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bai5.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<button id="submit">Đăng nhập hệ thống</button>
+	<button id="submit1a">Đăng nhập thành công</button>
+	<div class="main">
+		<div class="main1">
+			<div class="main2">Member Login</div>
+			<div class="main3">
+				<a href="#" id="forgot" onclick='clickForgot()'>Forgot Password?</a>
+			</div>
+		</div>
+			<input type="text-number"placeholder="OldPassword" id="passwordold" name='password'>	
+			<input type="text-number"placeholder="NewPassword" id="passwordnew" name='password'>
+		<div class=khoiusername>
+			<i class="fa fa-user" id="fa-user"></i>
+			<input type="text-number"placeholder="User name" id="username" class="username"name='username'>			
+		</div>		
+		<div class="khoipassword">
+			<i class="fa fa-lock" id="fa-lock"></i>
+			<input type="text-number"placeholder="Password" id="password" class="password"name='password'>
+		</div>	
+			
+			<p id="demo1"></p>
+			<p id="demo2"></p>
+			<p id="demo3"></p>
+			<p id="demo4"></p>
+			<button id="save" class="save" onclick="Save()">Save</button>
+			<button id="submit1" class="submit1"onclick="Login()">Login</button>	
+
+			
+			<div class="fa fa-times" id="fa-times"></div>
+	</div>	
+	
+	<script>
+// function Login() {
+//   var x, text,y;
+//   x = document.getElementById("username").value;
+//   if (x == 'admin') {
+//     text = "";
+//   } else {
+//     text = "không trùng khớp";
+//   }
+//   document.getElementById("demo").innerHTML = text;
+
+
+//   y = document.getElementById("password").value;
+//   if (y == 'admin') {
+//     text = "";
+//   } else {
+//     text = "không trùng khớp";
+//   }
+//   document.getElementById("demo1").innerHTML = text;
+// }
+
+
+function Login(){
+	var x,y,text;
+	x = document.getElementById('username').value;
+	y = document.getElementById('password').value;
+	if (x=="") {
+		text1="Băt buộc nhập";
+	}else{
+		text1="";
+	}if (y=="") {
+		text="Băt buộc nhập";
+	}else{
+		text="";
+	}
+	if((x=='admin')&&(y=='admin')){
+		text2 = 'Đăng nhập thành công';
+	}else if((x!='admin'&& x!="")||(y!='admin'&& y!="")){
+		text2 = 'tài khoản hoặc mật khẩu không đúng';
+	}
+	document.getElementById('demo2').innerHTML=text;
+	document.getElementById("demo3").innerHTML = text1;
+	document.getElementById('demo1').innerHTML=text2;
+}
+function Save(){
+	var x,y,text;
+	x = document.getElementById('passwordold').value;
+	y = document.getElementById('passwordnew').value;
+	var khoidn = document.getElementsByClassName('main');
+	var khoidn = khoidn[0]; 
+	if (x=="") {
+		text1="Băt buộc nhập";
+	}else{
+		text1="";
+	}if (y=="") {
+		text="Băt buộc nhập";
+	}else{
+		text="";
+	}
+	if(((x!="")||(y!=""))&&(x==y)){
+		text2 = 'Đổi mật khẩu thành công';
+		
+	}else if((x!=y&&x!=""&&y!="")){
+		text2 = "không trùng khớp";
+	}
+	document.getElementById('demo1').innerHTML="";
+	document.getElementById("demo2").innerHTML = text;	
+	document.getElementById("demo3").innerHTML = text1;
+	document.getElementById("demo4").innerHTML = text2;
+}	
+</script>	
+	<script type="text/javascript" src="bai5.js"></script>
+</body>
+</html>
